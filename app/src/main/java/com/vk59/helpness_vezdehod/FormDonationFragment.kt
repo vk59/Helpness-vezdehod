@@ -14,11 +14,10 @@ class FormDonationFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val view = inflater.inflate(R.layout.fragment_choose_type, container, false)
+        val view = inflater.inflate(R.layout.fragment_form_donation, container, false)
 
         val navController: NavController = findNavController()
 
-        MainActivity.backButtonToolbar!!.visibility = View.VISIBLE
         MainActivity.backButtonToolbar!!.setOnClickListener {
             navController.navigate(R.id.action_formDonationFragment_to_chooseTypeFragment)
         }
