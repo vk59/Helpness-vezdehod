@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Helpness-vezdehod</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="text_main_fragment">У Вас пока нет сборов.\nНачните доброе дело.</string>
+    <string name="createDonationButton">Создать сбор</string>
+    <string name="aimDonateCreateButton">Целевой сбор</string>
+    <string name="aim_donut_button">Целевой сбор</string>
+    <string name="repetitiveDonutButton">Регулярный сбор</string>
+</resources>

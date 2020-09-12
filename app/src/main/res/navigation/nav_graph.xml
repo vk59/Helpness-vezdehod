@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:navGraph="@navigation/nav_graph"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.vk59.helpness_vezdehod.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_chooseTypeFragment"
+            app:destination="@id/chooseTypeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/chooseTypeFragment"
+        android:name="com.vk59.helpness_vezdehod.ChooseTypeFragment"
+        android:label="fragment_choose_type"
+        tools:layout="@layout/fragment_choose_type" >
+        <action
+            android:id="@+id/action_chooseTypeFragment_to_formDonationFragment"
+            app:destination="@id/formDonationFragment" />
+        <action
+            android:id="@+id/action_chooseTypeFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/formDonationFragment"
+        android:name="com.vk59.helpness_vezdehod.FormDonationFragment"
+        android:label="fragment_form_donation"
+        tools:layout="@layout/fragment_form_donation" >
+        <action
+            android:id="@+id/action_formDonationFragment_to_chooseTypeFragment"
+            app:destination="@id/chooseTypeFragment" />
+    </fragment>
+</navigation>

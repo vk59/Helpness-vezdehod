@@ -1,0 +1,12 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+  <path
+      android:pathData="M10.5,7.5178L5.7589,12.2589C5.2707,12.747 4.4793,12.747 3.9911,12.2589C3.503,11.7707 3.503,10.9793 3.9911,10.4911L10.8661,3.6161C11.3543,3.128 12.1457,3.128 12.6339,3.6161L19.5089,10.4911C19.997,10.9793 19.997,11.7707 19.5089,12.2589C19.0207,12.747 18.2293,12.747 17.7411,12.2589L13,7.5178L13,20.125C13,20.8154 12.4404,21.375 11.75,21.375C11.0596,21.375 10.5,20.8154 10.5,20.125L10.5,7.5178Z"
+      android:strokeWidth="1"
+      android:fillColor="@color/buttonToolbar"
+      android:fillType="nonZero"
+      android:strokeColor="#00000000"/>
+</vector>
