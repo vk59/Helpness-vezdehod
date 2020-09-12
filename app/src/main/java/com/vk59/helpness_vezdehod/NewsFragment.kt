@@ -5,34 +5,34 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
+import android.widget.ProgressBar
 import androidx.navigation.NavController
 import androidx.navigation.fragment.findNavController
-import kotlinx.android.synthetic.main.toolbar.*
 
-class PostingFragment : Fragment() {
-
+class NewsFragment : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val view = inflater.inflate(R.layout.fragment_posting, container, false)
-
+        val view = inflater.inflate(R.layout.fragment_news, container, false)
+        val buttonHelp: Button = view.findViewById(R.id.helpButtonSnip)
         val navController: NavController = findNavController()
+
         MainActivity.backButtonToolbar!!.setOnClickListener {
-            navController.navigate(R.id.action_postingFragment_to_additionallyFragment)
+            navController.navigate(R.id.action_newsFragment_to_postingFragment)
             MainActivity.uploadButtonToolbar!!.visibility = View.INVISIBLE
         }
 
-        MainActivity.uploadButtonToolbar!!.visibility = View.VISIBLE
 
-        MainActivity.uploadButtonToolbar!!.setOnClickListener {
-            navController.navigate(R.id.action_postingFragment_to_newsFragment)
+        buttonHelp.isEnabled = true
+        buttonHelp.alpha = 1F
+        val progressBar: ProgressBar = view.findViewById(R.id.progressBar)
+        progressBar.setProgress(60, true)
+        buttonHelp.setOnClickListener {
+            navController.navigate(R.id.action_newsFragment_to_descriptionFragment)
         }
-
-        MainActivity.toolbarTitle!!.text = "Ваня"
-
         return view
     }
-
 }

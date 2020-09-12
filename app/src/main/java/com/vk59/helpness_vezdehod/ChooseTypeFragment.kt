@@ -32,8 +32,9 @@ class ChooseTypeFragment : Fragment() {
             navController.navigate(R.id.action_chooseTypeFragment_to_formDonationFragment)
         }
         buttonToRepetitiveForm.setOnClickListener {
-            navController.navigate(R.id.action_chooseTypeFragment_to_formDonationFragment)
+            navController.navigate(R.id.action_chooseTypeFragment_to_formRepetitiveFragment)
         }
+
         MainActivity.backButtonToolbar!!.visibility = View.VISIBLE
         MainActivity.backButtonToolbar!!.setOnClickListener {
             navController.navigate(R.id.action_chooseTypeFragment_to_mainFragment)

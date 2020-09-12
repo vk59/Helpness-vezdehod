@@ -26,6 +26,9 @@
         <action
             android:id="@+id/action_chooseTypeFragment_to_mainFragment"
             app:destination="@id/mainFragment" />
+        <action
+            android:id="@+id/action_chooseTypeFragment_to_formRepetitiveFragment"
+            app:destination="@id/formRepetitiveFragment" />
     </fragment>
     <fragment
         android:id="@+id/formDonationFragment"
@@ -55,5 +58,45 @@
         android:id="@+id/postingFragment"
         android:name="com.vk59.helpness_vezdehod.PostingFragment"
         android:label="fragment_posting"
-        tools:layout="@layout/fragment_posting" />
+        tools:layout="@layout/fragment_posting" >
+        <action
+            android:id="@+id/action_postingFragment_to_additionallyFragment"
+            app:destination="@id/additionallyFragment" />
+        <action
+            android:id="@+id/action_postingFragment_to_newsFragment"
+            app:destination="@id/newsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/newsFragment"
+        android:name="com.vk59.helpness_vezdehod.NewsFragment"
+        android:label="fragment_news"
+        tools:layout="@layout/fragment_news" >
+        <action
+            android:id="@+id/action_newsFragment_to_postingFragment"
+            app:destination="@id/postingFragment" />
+        <action
+            android:id="@+id/action_newsFragment_to_descriptionFragment"
+            app:destination="@id/descriptionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/descriptionFragment"
+        android:name="com.vk59.helpness_vezdehod.DescriptionFragment"
+        android:label="fragment_description"
+        tools:layout="@layout/fragment_description" >
+        <action
+            android:id="@+id/action_descriptionFragment_to_newsFragment"
+            app:destination="@id/newsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/formRepetitiveFragment"
+        android:name="com.vk59.helpness_vezdehod.FormRepetitiveFragment"
+        android:label="fragment_form_repetitive"
+        tools:layout="@layout/fragment_form_repetitive" >
+        <action
+            android:id="@+id/action_formRepetitiveFragment_to_postingFragment"
+            app:destination="@id/postingFragment" />
+        <action
+            android:id="@+id/action_formRepetitiveFragment_to_chooseTypeFragment"
+            app:destination="@id/chooseTypeFragment" />
+    </fragment>
 </navigation>
