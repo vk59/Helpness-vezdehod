@@ -35,5 +35,25 @@
         <action
             android:id="@+id/action_formDonationFragment_to_chooseTypeFragment"
             app:destination="@id/chooseTypeFragment" />
+        <action
+            android:id="@+id/action_formDonationFragment_to_additionallyFragment"
+            app:destination="@id/additionallyFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/additionallyFragment"
+        android:name="com.vk59.helpness_vezdehod.AdditionallyFragment"
+        android:label="fragment_additionally"
+        tools:layout="@layout/fragment_additionally" >
+        <action
+            android:id="@+id/action_additionallyFragment_to_formDonationFragment"
+            app:destination="@id/formDonationFragment" />
+        <action
+            android:id="@+id/action_additionallyFragment_to_postingFragment"
+            app:destination="@id/postingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/postingFragment"
+        android:name="com.vk59.helpness_vezdehod.PostingFragment"
+        android:label="fragment_posting"
+        tools:layout="@layout/fragment_posting" />
 </navigation>

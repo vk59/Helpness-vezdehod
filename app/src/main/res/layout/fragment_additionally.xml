@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background"
-    tools:context=".FormDonationFragment">
-
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".AdditionallyFragment"
+    android:background="@color/background">
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -33,32 +32,6 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical" >
 
-                <include layout="@layout/upload_cover"
-                    android:layout_margin="20dp"
-                    android:layout_height="120dp"
-                    android:layout_width="match_parent"/>
-
-                <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textSize="16sp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:text="@string/nameOfDonut"/>
-
-                <EditText
-                    android:id="@+id/editName"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="20dp"
-                    android:hint="@string/hintNameOfDonation"
-                    android:singleLine="true"
-                    android:padding="10dp"
-                    android:background="@drawable/edit_text_background"
-                    android:inputType="textCapSentences"
-                    />
-
                 <TextView
                     android:layout_marginTop="20dp"
                     android:layout_width="match_parent"
@@ -66,74 +39,10 @@
                     android:textSize="16sp"
                     android:layout_marginLeft="20dp"
                     android:layout_marginRight="20dp"
-                    android:text="@string/sumOfDonation"/>
-
-                <EditText
-                    android:id="@+id/editSum"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="20dp"
-                    android:hint="@string/hintSumOfDonation"
-                    android:padding="10dp"
-                    android:inputType="textCapSentences"
-                    android:background="@drawable/edit_text_background"
-                    />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
-                    android:textSize="16sp"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="20dp"
-                    android:text="@string/aimOfDonation"/>
-
-                <EditText
-                    android:id="@+id/editAim"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="20dp"
-                    android:hint="@string/hintAimOfDonation"
-                    android:padding="10dp"
-                    android:inputType="textCapSentences"
-                    android:background="@drawable/edit_text_background"
-                    />
-
-                <TextView
-                    android:layout_marginTop="20dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textSize="16sp"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="20dp"
-                    android:text="@string/descriptionOfDonation"/>
-
-                <EditText
-                    android:id="@+id/editDescription"
-
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="20dp"
-                    android:hint="@string/hintDescriptionOfDonation"
-                    android:padding="10dp"
-                    android:inputType="textCapSentences"
-                    android:background="@drawable/edit_text_background"
-                    />
-
-                <TextView
-                    android:layout_marginTop="20dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textSize="16sp"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="20dp"
-                    android:text="Куда получать деньги"/>
+                    android:text="Автор"/>
 
                 <Spinner
-                    android:id="@+id/spinner"
+                    android:id="@+id/spinnerCreator"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textSize="16sp"
@@ -146,20 +55,80 @@
                     android:spinnerMode="dropdown"
                     style="@style/spinner_style"/>
 
+                <TextView
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:text="Сбор завершится"/>
 
+                <RadioGroup
+                    android:id="@+id/radioGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp">
+
+                    <RadioButton
+                        android:id="@+id/radioGotSum"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/button_radio"
+                        android:textSize="16sp"
+                        android:padding="5dp"
+                        android:text="Когда сумма будет собрана" />
+
+                    <RadioButton
+                        android:id="@+id/radioDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/button_radio"
+                        android:textSize="16sp"
+                        android:padding="5dp"
+                        android:text="В определенную дату" />
+                </RadioGroup>
+
+
+                <TextView
+                    android:id="@+id/chooseDateTitle"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:text="Дата окончания"
+                    android:visibility="invisible"/>
+
+                <TextView
+                    android:id="@+id/chooseDate"
+                    android:text="Выберите дату"
+                    android:textSize="16sp"
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    style="@style/spinner_style"
+                    android:visibility="invisible"/>
             </LinearLayout>
         </ScrollView>
 
         <Button
-            android:id="@+id/continueButton"
+            android:id="@+id/createButton"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:background="@drawable/button_base_blue"
-            android:text="Далее"
+            android:text="Создать сбор"
             android:textAllCaps="false"
             android:textColor="#FFFFFF"
             android:textSize="20sp"
             android:layout_margin="20dp"
+            android:enabled="false"
+            android:alpha="0.6"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

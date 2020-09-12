@@ -2,11 +2,15 @@
 <resources>
     <color name="colorPrimary">#FFFFFF</color>
     <color name="colorPrimaryDark">#20000000</color>
-    <color name="colorAccent">#03DAC5</color>
-    <color name="baseButton">#4986CC</color>
+    <color name="colorAccent">#000000</color>
+    <color name="baseColour">#4986CC</color>
     <color name="toolbar_color">#FFFFFF</color>
     <color name="buttonToolbar">#3F8AE0</color>
     <color name="black_70">#70000000</color>
     <color name="black_40">#40000000</color>
     <color name="background">#ffffff</color>
+    <color name="strokeViewUploadImage">#3F8AE0</color>
+    <color name="exitTextBackground">#F2F3F5</color>
+    <color name="editTextStrokeBackground">#1F000000</color>
+    <color name="baseGrey">#99A2AD</color>
 </resources>

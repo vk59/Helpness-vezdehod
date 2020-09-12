@@ -9,4 +9,14 @@
     <string name="repetitiveDonutButton">Регулярный сбор</string>
     <string name="titleMain">Пожертвования</string>
     <string name="titleChooseType">Тип сбора</string>
+    <string name="titileFormDonation">Целевой сбор</string>
+    <string name="nameOfDonut">Название</string>
+    <string name="hintNameOfDonation">Название сбора</string>
+    <string name="hintSumOfDonation">Сколько нужно собрать?</string>
+    <string name="sumOfDonation">Сумма, ₽</string>
+    <string name="descriptionOfDonation">Описание</string>
+    <string name="aimOfDonation">Цель</string>
+    <string name="hintAimOfDonation">Например, лечение человека</string>
+    <string name="hintDescriptionOfDonation">На что пойдут деньги и как они кому-то помогут?</string>
+    <string name="titleAdditionally">Дополнительно</string>
 </resources>
