@@ -26,6 +26,7 @@ class MainFragment : Fragment() {
             navController.navigate(R.id.action_mainFragment_to_chooseTypeFragment)
         }
         MainActivity.backButtonToolbar!!.visibility = View.INVISIBLE
+        MainActivity.toolbarTitle!!.text = getString(R.string.titleMain)
 
         return view
     }

@@ -7,4 +7,6 @@
     <string name="aimDonateCreateButton">Целевой сбор</string>
     <string name="aim_donut_button">Целевой сбор</string>
     <string name="repetitiveDonutButton">Регулярный сбор</string>
+    <string name="titleMain">Пожертвования</string>
+    <string name="titleChooseType">Тип сбора</string>
 </resources>

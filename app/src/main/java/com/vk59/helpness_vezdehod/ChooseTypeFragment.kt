@@ -24,6 +24,8 @@ class ChooseTypeFragment : Fragment() {
         val buttonToForm: View = view.findViewById(R.id.aimButton)
         val buttonToRepetitiveForm: View = view.findViewById(R.id.repetitiveButton)
 
+        MainActivity.toolbarTitle!!.text = getString(R.string.titleChooseType)
+
         val navController: NavController = findNavController()
         buttonToForm.setOnClickListener {
             Log.d("GO GO GO", "to form")
