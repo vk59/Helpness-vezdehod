@@ -25,7 +25,7 @@ class FormRepetitiveFragment : Fragment() {
 
         MainActivity.toolbarTitle!!.text = getString(R.string.regularDonation)
         MainActivity.backButtonToolbar!!.setOnClickListener {
-            navController.navigate(R.id.action_formDonationFragment_to_chooseTypeFragment)
+            navController.navigate(R.id.action_formRepetitiveFragment_to_chooseTypeFragment)
         }
 
         val spinner: Spinner = view.findViewById(R.id.spinner2)

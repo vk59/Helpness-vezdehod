@@ -25,6 +25,7 @@ class NewsFragment : Fragment() {
             MainActivity.uploadButtonToolbar!!.visibility = View.INVISIBLE
         }
 
+        MainActivity.uploadButtonToolbar!!.visibility = View.INVISIBLE
 
         buttonHelp.isEnabled = true
         buttonHelp.alpha = 1F
